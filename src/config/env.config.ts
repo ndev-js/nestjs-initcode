@@ -9,4 +9,6 @@ export class EnvConfig {
 
   @IsNumber()
   APP_PORT: number;
+  @IsNumber()
+  DB_PORT: number;
 }

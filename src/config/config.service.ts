@@ -17,4 +17,16 @@ export class AppConfigService {
   get nodeEnv(): string {
     return this.configService.get<string>('NODE_ENV');
   }
+  get DB_PORT(): number {
+    return this.configService.get<number>('DB_PORT');
+  }
+  get DB_USERNAME(): number {
+    return this.configService.get<number>('DB_USERNAME');
+  }
+  get DB_PASSWORD(): number {
+    return this.configService.get<number>('DB_PASSWORD');
+  }
+  get DB_NAME(): string {
+    return this.configService.get<string>('DB_NAME');
+  }
 }
